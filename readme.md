@@ -12,7 +12,7 @@ samples), parse through the entirety of the text, and return the 100 most used
 words, and the number of times they were used in the sample.
 
 ## Version 0.1
-## (Just get it working edition!)
+### (Just get it working edition!)
 
 __Added__
 - working python script which return the top 100 most common words and their counts
