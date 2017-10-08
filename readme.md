@@ -11,7 +11,7 @@ This small script will take in an input file (included input.txt for my writing
 samples), parse through the entirety of the text, and return the 100 most used
 words, and the number of times they were used in the sample.
 
-## Version 0.1
+### Version 0.1
 ### (Just get it working edition!)
 
 __Added__
