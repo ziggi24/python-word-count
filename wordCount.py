@@ -25,7 +25,7 @@ fileName = input("What is the file name of the input text? ")
 #object, called count here. This will return completed when there are no more
 #words to parse.
 with open(fileName) as doc:
-    count = Counter(doc.read().strip().split().lower())
+    count = Counter(doc.read().strip().split())
 
 # this is the print line statement. Currently this is not formatted, and will
 # print out a messy array with the top 100 most used words.
