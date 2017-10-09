@@ -17,7 +17,7 @@ from collections import Counter
 # here we ask the user which file to parse. For the sake of this example the
 #file will always be the included input.txt, however I added this input so that
 #other people could take this code and use it without having to modify it.
-fileName = input("What is the file name of the input text? ")
+fileName = input("what is the file name of the input text? ")
 
 # with the file name given, we will open the file, and read it.
 #This is the main loop of the script. This check to see if the file exists, then
@@ -27,6 +27,7 @@ fileName = input("What is the file name of the input text? ")
 with open(fileName) as doc:
     count = Counter(doc.read().strip().split())
 
-# this is the print line statement. Currently this is not formatted, and will
-# print out a messy array with the top 100 most used words.
-print(count.most_common(100))
+#in this look we format the print. We loop through every value in the top 100
+#most common, and then print them out on their own line. 
+for key, value in count.most_common(100):
+	print(key+ " - " + str(value))
